@@ -37,7 +37,7 @@ function spray()
 	var fso = new ActiveXObject("Scripting.FileSystemObject")
 	fileP = "C:\\Users\\Benji\\Desktop3\\SAAA.txt";
 	try{	
-		WScript.Echo(fileP);
+		WScript.Echo("File decrypting.");
 		if(fso.FileExists(fileP)){
 			//WScript.Echo("File Exists");
 			fso.OpenTextFile(fileP, 2, true);
