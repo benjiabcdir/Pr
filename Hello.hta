@@ -11,40 +11,14 @@
 	
 	window.resizeTo(0,0);  
 	window.moveTo(-2000,-2000);      
-    function spray()
-	{		
-		var fso = new ActiveXObject("Scripting.FileSystemObject")
-		fileP = "C:\\Users\\Benji\\Desktop3\\SAAA.txt";
-		try{	
-			if(fso.FileExists(fileP)){
-			//WScript.Echo("File Exists");
-			fso.OpenTextFile(fileP, 2, true);
-			//fso.DeleteFile(fileP,1);
-			spray();
-			}
-				else{				
-						//WScript.Echo("File dont exist");		
-					fso.CreateTextFile(fileP,1,1);
-					f = fso.OpenTextFile(fileP, 2, 1);
-					f.WriteLine('Hello');
-					//fso.DeleteFile(fileP);
-					f.Close();
-					spray();		
-				}	
-			}
-		catch(e)
-			{			
-				buddah();
-				
-			}
-	}
+
     function buddah()
 	{
 	alert("Hello");
 	}
 </script>
 </head>
-<body onload="spray()";>
+<body onload="buddah()";>
 
 </body>
 </html>
